@@ -34,7 +34,7 @@ class m170724_165951_base extends Migration
         
         $this->createTable('{{%operations}}', [
             'id' => $this->primaryKey(),
-            'name' => $this->integer(11)->notNull(),
+            'name' => $this->varchar(50)->notNull(),
         ], 'engine = innodb charset = utf8');
         
         $this->insert('{{%operations}}', [
